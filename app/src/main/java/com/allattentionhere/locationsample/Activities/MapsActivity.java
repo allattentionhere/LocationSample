@@ -15,15 +15,15 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
-    double lat,lng;
+    double lat, lng;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
 
-        lat=getIntent().getDoubleExtra("lat",0.0f);
-        lng=getIntent().getDoubleExtra("lng",0.0f);
+        lat = getIntent().getDoubleExtra("lat", 0.0f);
+        lng = getIntent().getDoubleExtra("lng", 0.0f);
 
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()

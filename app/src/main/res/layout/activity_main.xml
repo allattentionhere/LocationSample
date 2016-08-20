@@ -68,11 +68,11 @@
         </RelativeLayout>
 
         <LinearLayout
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="32dp"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <android.support.v7.widget.AppCompatButton
                 android:id="@+id/btn_locate"
@@ -82,18 +82,20 @@
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:text="AUTO LOCATE" />
+
             <ProgressBar
-                android:visibility="gone"
+                android:id="@+id/pb_locate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/pb_locate"/>
+                android:visibility="gone" />
+
             <TextView
-                android:layout_margin="16dp"
                 android:id="@+id/txt_location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="16dp"
                 android:textColor="@color/colorPrimary"
-                android:textSize="18sp"/>
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout

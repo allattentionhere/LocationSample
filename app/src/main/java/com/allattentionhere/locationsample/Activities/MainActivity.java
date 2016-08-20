@@ -210,7 +210,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onError(Status status) {
-        showSnackbar(status.getStatusMessage(),null);
+        showSnackbar(status.getStatusMessage(), null);
     }
 
 }
